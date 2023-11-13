@@ -115,9 +115,7 @@ public class EnemyStats : MonoBehaviour
 
     private void OnDestroy()
     {
-        lockOnTarget.targets.Remove(gameObject.GetComponent<Targetable>());
-        lockOnTarget.RemoveTarget(gameObject.GetComponent<Targetable>());
-        lockOnTarget.HasFollowTarget = false;
+        
     }
 
     public void LootDrop()
